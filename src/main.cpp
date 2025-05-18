@@ -191,9 +191,9 @@ NamedNodeInfo namedNodes[NODE_COUNT] = {
 void turnLeft() {
   // Example: left wheel backward, right wheel forward
    digitalWrite(2,LOW);
-    analogWrite(5,120);
+    analogWrite(5,180);
     digitalWrite(4,LOW);
-    analogWrite(6,120);
+    analogWrite(6,180);
   delay(350); // Adjust this delay for a 90-degree turn
   // Stop motors after turn
   digitalWrite(2, LOW);
@@ -205,9 +205,9 @@ void turnLeft() {
 void turnRight() {
   // Example: left wheel forward, right wheel backward
     digitalWrite(2,HIGH);
-    analogWrite(5,120);
+    analogWrite(5,180);
     digitalWrite(4,HIGH);
-    analogWrite(6,120);
+    analogWrite(6,180);
   delay(350); // Adjust this delay for a 90-degree turn
   // Stop motors after turn
   digitalWrite(2, LOW);
